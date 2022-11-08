@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     //parametros del broker la siguiente variable con el broker de shiftr.io
     static String MQTTHOST = "tcp://68.183.119.177"; //el broker
-    //static String USERNAME = "accesobroker";          //el token de acceso
-    //static String PASSWORD = "zxcvbnmz";             //la contraceña del token
+    //static String USERNAME = "iphone de rafael";          //el token de acceso
+    //static String PASSWORD = "rafa1212";             //la contraceña del token
 
     MqttAndroidClient client;              //  clienteMQTT este dispositivo
     MqttConnectOptions options;            // para meter parametros a la conexion
@@ -113,8 +113,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public  void  publicarD1 (View v) {
-        String tema="st";///corrrespode al tema de LED
-        String  menssage="ON";
+        String tema="VO/01";///corrrespode al tema de LED
+        String  menssage="1";
         publicaste= "publicaras " + tema + " " + menssage; //concatenamos el dato a publicar
         intento_publicar=true;//si intento publicar
         checar_conexion();//revisamos la conexion
@@ -134,8 +134,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public  void  publicarD2 (View v) {
-        String tema="st";///corrrespode al tema de LED
-        String  menssage="OFF";
+        String tema="VO/01";///corrrespode al tema de LED
+        String  menssage="0";
         publicaste= "publicaras " + tema + " " + menssage; //concatenamos el dato a publicar
         intento_publicar=true;//si intento publicar
         checar_conexion();//revisamos la conexion
